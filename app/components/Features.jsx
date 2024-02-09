@@ -1,64 +1,126 @@
-import { AiFillHeart, AiFillCheckCircle, AiFillControl } from 'react-icons/ai'
+import React from 'react';
+import Image from 'next/image';
+import styles from '../../app/components/Features.css';
 
-const features = [
-  {
-    name: 'Unlimited inboxes',
-    description:
-      'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
-    href: '#',
-    icon: AiFillHeart,
-  },
-  {
-    name: 'Manage team members',
-    description:
-      'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
-    href: '#',
-    icon: AiFillCheckCircle,
-  },
-  {
-    name: 'Spam report',
-    description:
-      'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
-    href: '#',
-    icon: AiFillControl,
-  },
-]
 
-export default function Features() {
+const Features = () => {
   return (
-    <div className= "w-full bg-[#ecf0f3] py-24 sm:py-32">
+    <div className="w-full bg-[#ecf0f3] py-8 sm:py-12 md:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto lg:mx-0 text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-black sm:text-4xl">
-            Utilize the latest Tech Stacks from a professional team
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Let us design, build and develop your next project. Whether that is your company's website, a highly converting landing page, a SaaS application or a mobile app. We've got you covered.
-          </p>
-        </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-[#ff781f]">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                  </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a href={feature.href} className="text-sm font-semibold leading-6 text-[#ff781f]">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
-                </dd>
+        <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
+          <div className="flex gap-4">
+            <div className="flex gap-4">
+              <div className="flex flex-col">
+                <button
+                  className="border border-[#ecf0f3] outline-[#E14503] bg-transparent p-2 rounded-md text-[#E14503] font-semibold text-sm"
+                >
+                  Rishikesh
+                </button>
               </div>
-            ))}
-          </dl>
+              <div className="flex flex-col">
+                <button
+                  className="border border-#767371 bg-transparent p-2 rounded-md text-[#767371] font-semibold text-sm"
+                >
+                  Rishikesh
+                </button>
+              </div>
+              <div className="flex flex-col">
+                <button
+                  className="border border-#767371 bg-transparent p-2 rounded-md text-[#767371] font-semibold text-sm"
+                >
+                  Rishikesh
+                </button>
+              </div>
+              <div className="flex flex-col">
+                <button
+                  className="border border-#767371 bg-transparent p-2 rounded-md text-[#767371] font-semibold text-sm"
+                >
+                  Rishikesh
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row">
+            <div className="flex-1">
+              <h1 className="text-5xl sm:text-6xl font-bold tracking-tight z-15 times-new-roman">
+                <span className="text-[#E14503] font-roboto">
+                  Rishikesh
+                </span>
+              </h1>
+                    
+    <div className={styles.takeJourneyTo} style={{
+  fontSize: 'var(--heading-h2-bold-size)',
+  fontWeight: 550,
+  color: 'black',
+  padding: '2rem 0',
+  width: '100%',
+  textAlign: ''
+}}>
+ Rishikesh holds immense spiritual
+significance<br /> as an abode of saints
+and sages, known as the<br /> "Yoga
+Capital of the World."It is blessed
+by the<br /> holy Ganges,offering a
+serene and sacred <br />environment
+for meditation, self-reflection,
+<br />and spiritual awakening.
+</div>
+              <div className="flex flex-col mt-4 lg:mt-0">
+  <button
+    className="border border-[#ecf0f3] bg-[#E14503] p-1 rounded-md text-white text-xs font-semibold"
+    style={{ width: '222.568px', height: '61.173px' }}
+  >
+    Explore
+  </button>
+</div>
+
+            </div>
+            <div className="flex-1 hidden lg:block">
+              <Image 
+                src="/Container.png"
+                alt="Container Image"
+                width={334.684}
+                height={362.906}
+                style={{ flexShrink: 0, marginRight: '1px', maxWidth: '100%', height: 'auto' }} 
+              />
+            </div>
+            <div>
+              <Image 
+                src="/Container01.jpg"
+                alt="Container Image 01"
+                width={172.511}
+                height={171.898}
+                style={{ flexShrink: 0, marginLeft: '1px', maxWidth: '100%', height: 'auto' }}
+              />
+              <Image 
+                src="/Container04.jpg"
+                alt="Container Image 03"
+                width={172.511}
+                height={171.898}
+                style={{ flexShrink: 0, marginLeft: '1px', maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
+            <div>
+              <Image 
+                src="/Container03.jpg"
+                alt="Container Image 01"
+                width={172.511}
+                height={171.898}
+                style={{ flexShrink: 0, marginLeft: '1px', maxWidth: '100%', height: 'auto' }}
+              />
+              <Image 
+                src="/Container04.jpg"
+                alt="Container Image 03"
+                width={172.511}
+                height={171.898}
+                style={{ flexShrink: 0, marginLeft: '1px', maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
+
+export default Features;

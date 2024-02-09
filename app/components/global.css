@@ -1,0 +1,103 @@
+.index_whereSpiritualityMeetsContainer__KjAMz {
+    font-size: var(--display-01-bold-size);
+    letter-spacing: -0.02em;
+    display: inline-block;
+    text-align: center;
+    color: var(--shades-black);
+}
+
+b {
+    font-weight: bold;
+}
+
+.index_tirthHomepage__lPNDs {
+    background-color: var(--shades-white);
+    width: 100%;
+    font-family: var(--subheading-semi-bold);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+    background-color: #FFFFFF; /* Set background color to white */
+}
+
+
+:root {
+    --subheading-semi-bold: Manrope;
+    --font-roboto: Roboto;
+    --font-dm-sans: "DM Sans";
+    --font-nunito: Nunito;
+    --subheading-semi-bold-size: 1.25rem;
+    --paragraph-p3-regular-size: 1.13rem;
+    --font-size-xs: 0.75rem;
+    --heading-h3-bold-size: 1.5rem;
+    --font-size-3xl: 1.38rem;
+    --font-size-11xl: 1.88rem;
+    --heading-h2-bold-size: 1rem;
+    --font-size-3xs: 0.63rem;
+    --font-size-base: 1rem;
+    --display-01-bold-size: 2.5rem;
+    --heading-h1-bold-size: 3rem;
+    --shades-white: #fff;
+    --neutral-600: #62534d;
+    --color-dimgray-100: #505050;
+    --primary-blue-500: #e14503;
+    --neutral-500: #81726c;
+    --neutral-700: #433630;
+    --primary-blue-50: #ffede6;
+    --color-seashell: #fff0e9;
+    --neutral-300: #c9bfbd;
+    --shades-black: #000;
+    --color-whitesmoke-100: #f7f7f7;
+    --neutral-50: #f7f5f4;
+    --gap-5xs: 0.5rem;
+    --gap-9xs: 0.25rem;
+    --gap-13xl: 2rem;
+    --gap-5xl: 1.5rem;
+    --gap-7xs: 0.38rem;
+    --padding-sm: 0.88rem;
+    --padding-xl: 1.25rem;
+    --padding-5xs: 0.5rem;
+    --padding-5xl: 1.5rem;
+    --padding-9xs: 0.25rem;
+    --br-9xs: 4px;
+    --br-5xs: 8px;
+    --br-3xs: 10px;
+    --br-8xs: 5px;
+    --br-21xl: 40px;
+    --br-mini: 15px;
+    --shadow-sm: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    --bg-color: #FFFFFF;
+}
+
+.__className_a64ecd {
+    font-family: '__Inter_a64ecd', '__Inter_Fallback_a64ecd';
+    font-style: normal;
+}
+
+.font-manrope-normal {
+    font-family: Manrope, sans-serif;
+    font-weight: normal;
+}
+/* global.css */
+
+/* global.css */
+
+body {
+    font-family: 'Manrope', sans-serif;
+    /* Add other global styles here */
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Add more global styles as needed */
+
+  /* Add more global styles as needed */
+  

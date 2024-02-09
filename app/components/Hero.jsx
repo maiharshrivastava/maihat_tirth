@@ -1,61 +1,46 @@
-'use client'
-
-import Image from "next/image"
-import blur from '../../public/blur.png'
-import Typed from 'react-typed'
-import Link from "next/link"
-import Carousel from "./Carousel"
+import React from 'react';
+import styles from '../../app/components/Hero.css';
+import './global.css';
 
 const Hero = () => {
+  const textStyle = {
+    fontFamily: 'var(--subheading-semi-bold)',
+    fontSize: 'var(--display-01-bold-size)',
+    letterSpacing: '-0.02em',
+    display: 'inline-block',
+    textAlign: 'center',
+  };
+
   return (
     <div className="h-screen w-full bg-[#ecf0f3] relative">
-        <Image
-   src={blur}
-    alt="blur"
-    layout="fill"
-    objectFit="cover"
-    quality={100}
-    priority
-    className="absolute animate-pulse"
-    />
-    {/* Main Text */}
-    <div className="flex flex-col text-center mx-auto max-w-[1260px] items-center justify-center pt-48">
-<h1 className="text-5xl sm:text-8xl font-bold tracking-tight z-20">
-    A software {" "}
-    <span className="bg-gradient-to-r from-[#ff781f] to-[#ffaf7a] text-transparent bg-clip-text">
-        agency
-    </span>
- </h1>
- <h1 className="text-5xl sm:text-8xl font-bold z-20">with a twist</h1>
- <h2 className="text-2xl sm:text-4xl mt-4">specializing in {" "}
-   <Typed
-   strings={[
-         'web development',
-            'mobile development',
-            'UI/UX design',
-            'branding',
-   ]}
-    typeSpeed={200}
-    backSpeed={100}
-    loop
-    /> {" "}
- </h2>
- <div className="items-center mx-auto justify-center text-center pt-16 z-20">
- <Link href="/pricing">
-    <button className="bg-black text-white text-2xl px-10 py-5 rounded-lg shadow-xl shadow-black/40 hover:bg-black/70 cursor-pointer  ">
-        See plans
-    </button>
-    </Link>
-    <p className="pt-6 font-bold text-lg">
-        Subscriptions based model with no hidden fees. Unlimited Requests
-    </p>
- </div>
+  <div className="flex flex-col text-center mx-auto max-w-[1260px] items-center justify-center pt-48">
+    <b className={styles.whereSpiritualityMeetsContainer}>
+      <div className={styles.spritTitle}>
+        <span style={{ fontSize: '3rem' }}>Where</span>
+        <span className={styles.spirituality} style={{ color: '#E14503', fontSize: '3rem' }}>{` Spirituality `}</span>
+      </div>
+      <div className={styles.spritTitle}>
+        <span style={{ fontSize: '3rem' }}>Meets</span>
+        <span className={styles.spirituality} style={{ color: '#E14503', fontSize: '3rem' }}> Serenity</span>
+      </div>
+    </b>
+   
+  
+        
+    <div className={styles.takeJourneyTo} style={{
+  fontSize: 'var(--heading-h2-bold-size)',
+  fontWeight: 550,
+  color: 'black',
+  padding: '2rem 0',
+  width: '100%',
+  textAlign: 'center'
+}}>
+  Journey to the soul-stirring landscapes of India's divine pilgrimage destinations. Discover the sacred path that leads to profound spirituality and serenity. Welcome to Tirth, your guiding light on an awe-inspiring Tirth yatra.
+</div>
+
+      </div>
     </div>
-    <div>
-   <Carousel />
-    </div>
-    </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

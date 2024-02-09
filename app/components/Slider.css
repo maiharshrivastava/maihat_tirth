@@ -1,0 +1,59 @@
+.carousel-wrapper {
+  margin: 20px 10px; /* Adjust the margin size as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust as needed */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite; /* Adjust animation duration as needed */
+  width: 100%; /* Set the container width to 100% */
+}
+
+.slide-container {
+  display: flex;
+  width: 200%; /* Double the width for two sets of slides */
+}
+
+.slide {
+  width: 100%; /* 100% width for each slide in the container */
+  height: 200px; /* Set the desired height */
+  margin-right: 50px; 
+}
+
+/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    margin: 10px 5px; /* Adjust the margin size for mobile */
+  }
+
+  .animate-scroll {
+    animation: scroll 10s linear infinite; /* Adjust animation duration for mobile */
+  }
+
+  .slide-container {
+    width: 700%; /* Adjust width for mobile view */
+  }
+
+  .slide {
+    width: calc(50% - 20px); /* 50% width for each slide in the container for mobile with increased spacing */
+    height: 150px; /* Adjust height for mobile */
+    margin-right: 50px; /* Increase the margin between slides */
+  }
+
+  .slide:last-child {
+    margin-right: 0; /* Remove margin from the last slide */
+  }
+
+  .slide img {
+    width: 100%;
+  }
+}

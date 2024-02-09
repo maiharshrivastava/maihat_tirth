@@ -12,6 +12,9 @@ import Sthal from "./components/Sthal";
 import Events from "./components/Events";
 import History from "./components/History"; // Added import for History
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
+
+
 export default function Home() {
   return (
     <section>
@@ -29,7 +32,9 @@ export default function Home() {
       <Events />
       
       <History /> 
+      <Slider/>
       <Footer />{/* Added History component */}
+
     </section>
   );
 }
